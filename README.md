@@ -12,13 +12,6 @@
 
 > compile 'top.golabe.circleprogressview:library:0.0.1'
 
-### Maven
-> <dependency>
-  <groupId>top.golabe.circleprogressview</groupId>
-  <artifactId>library</artifactId>
-  <version>0.0.1</version>
-  <type>pom</type>
- </dependency>
 
 
 ### In layout.xml
