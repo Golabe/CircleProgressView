@@ -2,7 +2,6 @@ package top.golabe.circleprogressview;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 
 import top.golabe.library.CircleProgressView;
 
@@ -14,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         mCircleProgressView=findViewById(R.id.circleProgressView);
+
+
     }
 
 

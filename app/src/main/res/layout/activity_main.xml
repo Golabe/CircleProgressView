@@ -10,8 +10,8 @@
     <top.golabe.library.CircleProgressView
         android:id="@+id/circleProgressView"
         android:layout_centerInParent="true"
-        app:progress="50"
-        app:progress_bar_width="2dp"
+        app:progress="100"
+        app:progress_bar_width="1dp"
         app:progress_bg_color="#689feb"
         app:progress_text_size="14sp"
         app:progress_bar_color="#ffffff"
