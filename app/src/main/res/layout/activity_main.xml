@@ -11,13 +11,13 @@
         android:id="@+id/circleProgressView"
         android:layout_centerInParent="true"
         app:progress="100"
-        app:progress_bar_width="1dp"
+        app:progress_bar_width="0.5dp"
         app:progress_bg_color="#689feb"
-        app:progress_text_size="14sp"
+        app:progress_text_size="4sp"
         app:progress_bar_color="#ffffff"
         app:progress_text_color="#ffffff"
-        android:layout_width="100dp"
-        android:layout_height="100dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 
 </RelativeLayout>
