@@ -1,4 +1,4 @@
-#CircleProgressView
+# CircleProgressView
 
 
 **A cirlce progress  view** 
@@ -11,6 +11,14 @@
 ### Add it in your app build.gradle at the end of repositories:
 
 > compile 'top.golabe.circleprogressview:library:0.0.1'
+
+### Maven
+> <dependency>
+  <groupId>top.golabe.circleprogressview</groupId>
+  <artifactId>library</artifactId>
+  <version>0.0.1</version>
+  <type>pom</type>
+ </dependency>
 
 
 ### In layout.xml
@@ -52,4 +60,4 @@
         <attr name="progress_text_size" format="dimension"/>
         <attr name="progress_bar_width" format="dimension"/>
     </declare-styleable>
-    ```
+```
