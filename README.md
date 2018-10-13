@@ -1,16 +1,18 @@
 
-#CircleProgressView
 
+**A cirlce progress  view**
 
-**A cirlce progress  view** 
 <img src="https://github.com/Golabe/CircleProgressView/blob/master/image/1.PNG?raw=true" style="zoom:50%" />
 <img src="https://github.com/Golabe/CircleProgressView/blob/master/image/2.PNG?raw=true" style="zoom:50%" />
+
 ### Usage
 ####Gradle
 ####Add it in your app build.gradle at the end of repositories:
 
 > compile 'top.golabe.circleprogressview:library:0.0.1'
+
 ####Maven
+
 ><dependency>
   <groupId>top.golabe.circleprogressview</groupId>
   <artifactId>library</artifactId>
@@ -19,6 +21,8 @@
 </dependency>
 
 ####In layout.xml
+
+
 ```
 <top.golabe.library.CircleProgressView
         android:id="@+id/circleProgressView"
