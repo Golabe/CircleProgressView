@@ -8,11 +8,10 @@ import android.graphics.Paint;
 import android.graphics.Point;
 import android.graphics.RectF;
 import android.util.AttributeSet;
-import android.util.Log;
+import android.util.TypedValue;
 import android.view.View;
 
 public class CircleProgressView extends View {
-    private static final String TAG = "CircleProgressView";
     private Context mContext;
     private int mProgressMax;
     private int mProgressMin;
@@ -80,7 +79,6 @@ public class CircleProgressView extends View {
         mPaintProgressBar.setStrokeCap(Paint.Cap.ROUND);
         mPaintProgressBar.setStrokeWidth(mProgressBarWidth);
         mTotalProgress = Math.abs(mProgressMax - mProgressMin);
-        Log.d(TAG, "init: "+mTotalProgress);
     }
 
 
@@ -223,12 +221,13 @@ public class CircleProgressView extends View {
         canvas.drawCircle(mCircleCenterPoint.x,mCircleCenterPoint.y,mRadius,mPaintBg);
     }
 
-    private int sp2px(float sp){
-        float scale = mContext.getResources().getDisplayMetrics().scaledDensity;
-        return (int) (scale*sp+0.5f);
+    private   int sp2px( float spVal) {
+        return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP,
+                spVal, mContext.getResources().getDisplayMetrics());
     }
-    private int dp2px(float dp){
-        float density = mContext.getResources().getDisplayMetrics().density;
-        return (int) (dp+density+0.5f);
+    private   int dp2px(float dpVal) {
+        return (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP,
+                dpVal, mContext.getResources().getDisplayMetrics());
     }
+
 }
