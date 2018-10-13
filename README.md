@@ -7,13 +7,13 @@
 <img src="https://github.com/Golabe/CircleProgressView/blob/master/image/2.PNG?raw=true" style="zoom:50%" />
 
 ### Usage
-###Gradle
-###Add it in your app build.gradle at the end of repositories:
+### Gradle
+### Add it in your app build.gradle at the end of repositories:
 
 > compile 'top.golabe.circleprogressview:library:0.0.1'
 
 
-###In layout.xml
+### In layout.xml
 ```
 <top.golabe.library.CircleProgressView
         android:id="@+id/circleProgressView"
@@ -27,7 +27,7 @@
         android:layout_width="100dp"
         android:layout_height="100dp" />
 ```
-###In code
+### In code
 
 ```
         mCircleProgressView.setProgress();
@@ -40,7 +40,7 @@
         mCircleProgressView.setProgressTextSize();
 ```
 
-###Attr
+### Attr
 
 ``` <declare-styleable name="CircleProgressView">
         <attr name="progress_bar_color" format="color" />
