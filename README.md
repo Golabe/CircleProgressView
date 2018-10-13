@@ -1,6 +1,7 @@
+#CircleProgressView
 
 
-**A cirlce progress  view**
+**A cirlce progress  view** 
 
 <img src="https://github.com/Golabe/CircleProgressView/blob/master/image/1.PNG?raw=true" style="zoom:50%" />
 <img src="https://github.com/Golabe/CircleProgressView/blob/master/image/2.PNG?raw=true" style="zoom:50%" />
@@ -12,7 +13,6 @@
 > compile 'top.golabe.circleprogressview:library:0.0.1'
 
 ####Maven
-
 ><dependency>
   <groupId>top.golabe.circleprogressview</groupId>
   <artifactId>library</artifactId>
@@ -21,8 +21,6 @@
 </dependency>
 
 ####In layout.xml
-
-
 ```
 <top.golabe.library.CircleProgressView
         android:id="@+id/circleProgressView"
@@ -37,6 +35,7 @@
         android:layout_height="100dp" />
 ```
 ####In code
+
 ```
         mCircleProgressView.setProgress();
         mCircleProgressView.setProgressBarColor();
@@ -48,7 +47,8 @@
         mCircleProgressView.setProgressTextSize();
 ```
 
-####attr
+####Attr
+
 ``` <declare-styleable name="CircleProgressView">
         <attr name="progress_bar_color" format="color" />
         <attr name="progress_bg_color" format="color" />
