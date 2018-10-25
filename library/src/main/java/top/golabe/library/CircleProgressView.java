@@ -76,7 +76,7 @@ public class CircleProgressView extends View {
         mPaintProgressBar.setStyle(Paint.Style.STROKE);
         mPaintProgressBar.setStrokeCap(Paint.Cap.ROUND);
         mPaintProgressBar.setStrokeWidth(mProgressBarWidth);
-        mTotalProgress = Math.abs(mProgressMax - mProgressMin);
+        mTotalProgress = Math.abs(mProgressMin)+Math.abs(mProgressMax);
     }
 
 
@@ -121,7 +121,7 @@ public class CircleProgressView extends View {
 
     private void drawProgressBar(Canvas canvas) {
 
-        canvas.drawArc(mRectF, 0, (float) ((360.0 / mTotalProgress) * mProgress), false, mPaintProgressBar);
+        canvas.drawArc(mRectF, 0, 360F/mTotalProgress*mTotalProgress/100*mProgress, false, mPaintProgressBar);
     }
 
     private void drawText(Canvas canvas) {
